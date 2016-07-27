@@ -8,7 +8,7 @@ tar zxvf ${PACKAGE}.tgz
 
 cd ${PACKAGE}
 
-cp ../xa3516a_mini_config  .config
+cp ../xa3516a_full_config  .config
 make -j8 ARCH=arm CROSS_COMPILE=arm-hisiv300-linux- uImage
 
 cp arch/arm/boot/uImage ../
